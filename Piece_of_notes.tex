@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% Version 1.0 (26/6/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\input{settings.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Linear Algebra} % Title of the assignment
+
+\author{Pastrami}% Author name and email address
+
+%\date{ --- \today} % University, school and/or department name(s) and a date
+\begin{document}
+	\maketitle
+	\subsection*{\S\,1-3 Subspace}
+	\begin{defn}[Subspace]
+A subset \(\mathrm{W}\) of a vector space \(\mathrm{V}\) over a field \(F\) is called a
+subspace of \(\mathrm{V}\) if \(\mathrm{W}\) is a vector space over \(F\) with the operations of addition
+and scalar multiplication defined on \(\mathrm{V}\).
+	\end{defn}
+	
+	\begin{thm*}
+	 Let \(\mathrm{V}\) be a vector space and \(\mathrm{W}\) a subset of \(\mathrm{V} .\) Then \(\mathrm{W}\)
+is a subspace of \(\mathrm{V}\) if and only if the following three conditions hold for the
+operations defined in \(V .\)
+\begin{tasks}(3)
+	\task [(i)]   \quad\(0 \in \mathrm{W} .\)
+	\task [(ii)]  \quad\(x+y \in \mathrm{W}\) 
+	\task [(iii)] \quad\(c x \in \mathrm{W}\) 
+\end{tasks}
+	\end{thm*}
+	\begin{example}
+		 Determine whether $W_1$ is a subspaces of $\R^3$ where
+		 
+		  \[W_1 = \left\{(a_1,a_2,a_3)\in\R^3\,|\,2a_1-7a_2+a_3 = 0\right\}\]
+		  
+		  \begin{sol*}
+		    Leave as a work to 
+		  \end{sol*}
+	\end{example}
+	
+	\begin{thm*}
+		Any intersection of subspaces of a vector space $\mathrm{V}$ is a subspace of $\mathrm{V}$.
+	\end{thm*}
+	\begin{warn}[Notice :]
+		It is natural to consider whether or not the union of subspaces of V is a subspace of V. It is easily seen that the union of subspaces must contain the zero vector and be closed under scalar multiplication, but in general the union of subspaces of V need not be closed under addition.
+	\end{warn}
+	
+	\newpage
+	
+	\begin{example}
+		Let \(W_{1}\) and \(W_{2}\) be subspaces of a vector space \(V .\) Prove that \(W_{1} \cup W_{2}\)
+is a subspace of \(V\) if and only if \(W_{1} \subseteq W_{2}\) or \(W_{2} \subseteq W_{1} .\)
+\begin{sol*}
+	
+\end{sol*}
+	\end{example}
+	\begin{defn}
+		If \(S_{1}\) and \(S_{2}\) are nonempty subsets of a vector space \(\mathrm{V}\), then
+the sum of \(S_{1}\) and \(S_{2}\), denoted \(S_{1}+S_{2}\), is the set \(\left\{x+y: x \in S_{1}\right.\) and \(\left.y \in S_{2}\right\}\).
+
+	\end{defn}
+	
+	\begin{defn}
+	A vector space \(\vee\) is called the direct sum of \(\mathrm{W}_{1}\) and \(\mathrm{W}_{2}\) if
+\(\mathrm{W}_{1}\) and \(\mathrm{W}_{2}\) are subspaces of \(\mathrm{V}\) such that \(\mathrm{W}_{1} \cap \mathrm{W}_{2}=\{0\}\) and \(\mathrm{W}_{1}+\mathrm{W}_{2}=\mathrm{V}\).
+We denote that \(\mathrm{V}\) is the direct sum of \(\mathrm{W}_{1}\) and \(\mathrm{W}_{2}\) by writing \(\mathrm{V}=\mathrm{W}_{1} \oplus \mathrm{W}_{2}\).
+	\end{defn}
+	
+	\begin{example}
+		Let \(W_{1}\) and \(W_{2}\) be subspaces of a vector space \(V\).
+(a) Prove that \(W_{1}+W_{2}\) is a subspace of \(V\) that contains both \(W_{1}\) and
+\(W_{2}\).
+(b) Prove that any subspace of \(V\) that contains both \(W_{1}\) and \(W_{2}\) must
+also contain \(W_{1}+W_{2}\).
+	\begin{sol*}
+		
+	\end{sol*}
+	\end{example}
+	
+	\subsection*{\S 1-4 Linear Combination}
+	\begin{defn}
+	Let \(\mathrm{V}\) be a vector space and \(S\) a nonempty subset of \(\mathrm{V}\).
+	A vector \(v \in \mathrm{V}\) is called a linear combination of vectors of \(S\) if there exist
+a finite number of vectors \(u_{1}, u_{2}, \ldots, u_{n}\) in \(S\) and scalars \(a_{1}, a_{2}, \ldots, a_{n}\) in \(F\)
+such that \(v=a_{1} u_{1}+a_{2} u_{2}+\cdots+a_{n} u_{n} .\) 
+	\end{defn}
+	
+\newpage
+\section*{Chapter 2}	
+	\subsection*{\S\,2-1 Linear transformation}
+\begin{defn}[Definition of Linear Transformation]
+$ $\\	Let V and W be vector spaces (over F). We call a function $T: V  \rightarrow  W$    a linear transformation from V to W if, for all x, y $\in$ V and c $\in$ F, we have
+
+\begin{enumerate}
+	\item [(a)]   T(x + y) = T(x) + T(y) 
+	\item [(b)]    T(cx) = cT(x)
+\end{enumerate} 
+\end{defn}
+
+\begin{defn}[Definition of nullity and rank]
+$ $\\	Let V and W be vector spaces and let $T: V  \rightarrow  W$ be linear. If N(T) and R(T) are finite-dimensional, then we define the nullity of T, denoted nullity(T), and the rank of T, denoted rank(T), to be the dimensions of N(T) and R(T), respectively.
+\end{defn}
+
+\begin{thm*}
+$ $ \\ 	Let V and W be vector spaces and $T: V  \rightarrow  W$ be linear. Then N(T) and R(T) are subspaces of V and W, respectively.
+\end{thm*}
+
+\begin{thm*}
+$ $\\
+ Let V and W be vector spaces, and let $\mathrm{T} : \mathrm{V}  \rightarrow \mathrm{W}$ be linear. If $\beta = \{ v_1,v_2,...,v_n \}$ is a basis for $\mathrm{V}$ , then $ R(T) = \mathrm{span}(\mathrm{T}(\beta)) = \mathrm{span}(\{\mathrm{T}(v_1), \mathrm{T}(v_2), . . . , \mathrm{T}(v_n)\})$.
+
+\end{thm*}
+
+\begin{example}[11] %Example 11
+	Question : \\
+	Let T : $P2(R) \rightarrow  P3(R) $ be the linear trans formation defined by 
+	
+	
+	 \[T(f(x)) = 2f'(x) + \int_0^x3 f(t) dt \]
+	
+		\begin{sol*} 
+$ $ \\ 	
+Now $R(T) = span( \{ T(1), T(x), T(x^2 )  ) = span( \{ 3x,  2+ \frac{3}{2}  x^2 , 4x + x^3 \} ) $. 
+
+ \noindent Since \{ $3x$ , $ 2 + \frac{3}{2} x^2$, $4x + x^3$ \} is linearly independent, rank(T) = 3. Since
+2
+$dim(P3(R)) = 4$ , T is not onto. From the dimension theorem (Thm 2.3) , nullity(T) +
+3 = 3. So nullity(T) = 0, and therefore, N(T) = {0}. We conclude from Theorem 2.4 that T is one-to-one.
+
+	\end{sol*}
+
+	\end{example}
+\begin{example}[12] %Example 12
+	 Question : \\ Let $T: F^2 \rightarrow F^2 $ be the linear transformation defined by 
+	 
+	 \[T(a_1, a_2) = (a_1 + a_2, a_1)\]
+
+	\begin{sol*} 
+$ $ \\
+		It is easy to see that N(T) = \{ 0 \} ; so T is one-to-one. Hence Theorem 2.5 tells us that T must be onto. 
+	\end{sol*}
+
+\end{example}
+
+\begin{thm*}[2.3 Dimension Theorem]
+$ $ \\	
+Let V and W be vector spaces,
+and let $ \mathrm{T} : \mathrm{V}  \rightarrow  \mathrm{W} $ be linear. \\ If V is finite-dimensional, then
+ 
+ 
+ \[\rm	nullity(T) + rank(T) = dim(V).\]
+
+
+\end{thm*}
+
+\begin{thm*}[2.4]
+$ $ \\	Let V and W be vector spaces, and let $\rm T: V  \rightarrow  W$ be
+linear. Then T is one-to-one if and only if N(T) = {0 }.
+
+\end{thm*}
+
+\begin{thm*}[2.5]
+$ $ \\	 Let V and W be vector spaces of equal (finite) dimension, and let $\rm T: V  \rightarrow  W$ be linear. Then the following are equivalent.
+\begin{enumerate} 
+	\item[(a)] T is one-to-one. 
+	\item[(b)] T is onto.
+	\item[(c)] rank(T) = dim(V).
+
+\end{enumerate}
+
+\end{thm*}
+
+\begin{example}
+	Let $\rm T : \R^2\longrightarrow \R^3 $ , $\rm T(a_1,a_2) = (a_1+a_2 , 0 , 2a_1-a_2)$ , determine that $\rm T $ is linear , 1-1 , onto or not.
+	\begin{sol*}
+		 $ $
+		\begin{itemize}
+			\item Calim : $\rm T$ is linear.\newline
+			Let $ x =(a_1,a_2) \,,\, y= (b_1,b_2)$ 
+				
+				\(\begin{aligned} \rm T(c x+y) &=\rm T\left(c\left(a_{1}, a_{2}\right)+\left(b_{1}, b_{2}\right)\right)= T\left(ca_{1}+b_{1}, ca_{2}+b_{2}\right) \\ &=\rm \left(c a_{1}+b_{1}+c a_{2}+b_{2}, 0,2 c a_{1}+2 b_{1}-ca_{2}-b_{2}\right) \\ &=\rm \left(c\left(a_{1}+a_{2}\right)+\left(b_{1}+b_{2}\right), 0, c\left(2 a_{1}-a_{2}\right)+\left(2 b_{1}-b_{2}\right)\right) \\ &=\rm c\left(a_{1}+a_{2}, 0,2 a_{1}-a_{2}\right)+\left(b_{1}+b_{2}, 0,2 b_{1}-b_{2}\right) \\ &=\rm c T(x)+T (y) \end{aligned}\)
+				
+			$\therefore \rm T $ is linear
+			\item 1-1 and onto 	
+			
+			By Thm 2.2 in text book choose a basis for $\R^2 , \beta = \{(1,0) , (0,1)\}$
+			
+			$\rm R(T) = span\left(T(\beta)\right) = span(\left\{T(1,0) , T(0,1)\right\}) = span\left((1,0,-1), (1,0,-2)\right)$ 
+			
+			Clearly it is L.I. $\rm\implies rank(T) = 2$ , and apply the Dimension Theorem $\rm rank(T)=2\neq3=\dim(\R^3) $, and $\rm nullitily(T) = 1 $ , then it is not onto.
+			
+			By Thm 2.4  it is not one to one.
+			
+		\end{itemize}
+	\end{sol*}
+		\end{example}
+		\begin{example}
+		Let \(\rm V\) and \(\rm W\) be vector spaces, let \(\mathrm{T}:\rm  V \rightarrow W\) be linear, and let
+\(\left\{w_{1}, w_{2}, \ldots, w_{k}\right\}\) be a linearly independent subset of \(\rm R(T)\). Prove that
+if \(S=\left\{v_{1}, v_{2}, \ldots, v_{k}\right\}\) is chosen so that \(\mathrm{T}\left(v_{i}\right)=w_{i}\) for \(i=1,2, \ldots, k\),
+then \(S\) is linearly independent.
+\begin{sol*}$ $
+Calim : $\sum_{i=1}^n a_iv_i = 0\implies a_1 = a_2 = a_3 =\cdots =a_n = 0 $
+	
+	Let \(\sum_{i=1}^{n} a_{i} v_{i}=0\)
+then \(\mathrm{T]\left(\sum_{i=1}^{n} a_{i} v_{i}\right)=0\)
+
+Since \(\rm T\) is linear , \(\mathrm{T}\left(\sum_{i=1}^{n} a_{i} v_{i}\right)=\sum_{i=1}^{n} a_{i} \mathrm{T}\left(v_{i}  \right)=\sum_{i=1}^na_iw_i = 0\)
+
+
+Since $S$ is L.I. $\implies a_1 = a_2=\cdots = a_n = 0$ 
+
+\end{sol*}
+	
+		\end{example}
+
+\begin{thm*}[2.6]
+$ $ \\Let V and W be vector spaces over F, and suppose that \{ $v_1,v_2,...,v_n$ \} is a basis for V. For $w_1,w_2,...,w_n$ in W, there exists exactly one linear transformation $T: V  \rightarrow  W$ such that T($v_i$) = $w_i$ for i = 1,2,...,n.
+\end{thm*}
+\subsection*{\S 2-2 Matrix Representation}
+
+	 
+\end{document}
