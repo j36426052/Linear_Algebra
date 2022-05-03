@@ -239,7 +239,7 @@ Question ( Exercise 5 (a) (e) ) :\\
 \begin{sol*}$ $
 \begin{enumerate}
 	\item[(a)]
-	\item $Span(S) = \{a_1(1,0,2) + a_2(-1,1,1) \mid a_1 , a_2 \in \mathrm{F}\} $
+	\item $\mathrm{Span}(S) = \{a_1(1,0,2) + a_2(-1,1,1) \mid a_1 , a_2 \in \mathrm{F}\} $
 	\item $\left\{\begin{aligned}[l]
 		a_1 - a_2   & = & 2\\
 		0a_1 + a_2. & = &-1\\
@@ -249,7 +249,7 @@ Question ( Exercise 5 (a) (e) ) :\\
 \end{enumerate}
 \begin{enumerate}
 	\item[(e)]
-	\item $Span(S) = \{a_1(x^3+x^2+x+1) + a_2(x^2+x+1) + a_3(x+1)\}$
+	\item $\mathrm{Span}(S) = \{a_1(x^3+x^2+x+1) + a_2(x^2+x+1) + a_3(x+1)\}$
 	\item $\left\{\begin{aligned}[l]
 		a_1 + 0a_2 + 0a_3 &=& -1\\
 		a_1 + a_2 + 0a_3 &=& 2\\
@@ -267,14 +267,17 @@ Question ( Exercise 5 (a) (e) ) :\\
 \begin{example}
 	Question ( Exercise 6 ) :\\
 	Show that the vectors $(1,1,0) , (1,0,1)$, and $(0,1,1)$ generate $\mathrm{F}^3$.
-\begin{sol*}$ $\\
-Let  $\mathrm{S} = \{ (1,0,1),(1,0,1),(0,1,1) \} $.\\
-Check if $\mathrm{S} = \{ (1,0,1),(1,0,1),(0,1,1) \} $ is linearly independent.
+\begin{sol*}
+Let  $\mathrm{S} = \{ (1,0,1),(1,0,1),(0,1,1) \} $. 
+
+ Claim : $\mathrm{S} = \{ (1,0,1),(1,0,1),(0,1,1) \} $ is linearly independent.
 \begin{enumerate}
 	\item $a_1(1,0,1) + a_2(1,0,1) + a_3(0,1,1) = 0 \implies a_1 = a_2 = a_3 = 0$
-	\item $b_1(1,0,1) + b_2(1,0,1) + b_3(0,1,1) = (x , y , z) \implies b_1 = \frac{x + y - z}{2} , b_2 = \frac{x - y + z}{2} , b_3 = \frac{-x + y + z}{2}$
+	\item $b_1(1,0,1) + b_2(1,0,1) + b_3(0,1,1) = (x , y , z)$
+ 
+	$\implies b_1 = \frac{x + y - z}{2} , b_2 = \frac{x - y + z}{2} , b_3 = \frac{-x + y + z}{2}$
 \end{enumerate}	
-Since $\mathrm{S} = \{ (1,0,1),(1,0,1),(0,1,1) \} $ is linearly independent,  $Span(S)$ can generate $\mathrm{F}^3$.
+Since $\mathrm{S} = \{ (1,0,1),(1,0,1),(0,1,1) \} $ is linearly independent,  $\mathrm{Span}(S)$ can generate $\mathrm{F}^3$.
 \end{sol*}
 
 	
