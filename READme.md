@@ -1,4 +1,4 @@
-### Linear Algebra 
+###Lecture Notes on Linear Algebra 
 #### Workflow
     1. 對每個新章節會提供一個節點讓大家產生分支
     2. 新增一個分支(create a branch) 到本地(Local) 編輯，分支命名"author-section"
