@@ -1,0 +1,74 @@
+\input{settings2.tex}
+\linespread{1.6}
+\begin{document}
+	\section*{Chap.5 Diagonalization}
+		\subsection*{\S 5-1 Eigenvalue and Eigenvectors}
+		
+		
+		This chapter begins the "second half" of the linear algebra. The first half was about "$\mathrm{A}x = b$". The new problem "$\mathrm{A}x = \lambda x $" will still be solved by simplifying a matrix - making ait diagonal if possible.
+			
+			\begin{enumerate}
+				\item Does there exist an ordered basis $\beta$ for $\mathrm{V}$ such that $[T]_{\beta}$ is diagonal matrix ?
+				\item If such a basis exists how can it be found ?
+			\end{enumerate}
+		\begin{defn}
+			$T\in L(\mathrm{V})$ , $V$ is finite dimensional vector space. $T$ is "diagonalizable" if there exist $\beta~\ni [T]_{\beta}$ is a diagonal matrix. A square matrix $\mathrm{A}$ is called diagonalizable if $L_{A}$ is diagonalizable.  
+		\end{defn}
+		
+		\noindent Note that if $D  = [T]_{\beta}$ is a diagonal matrix, for $\beta = \left\{v_1 , \cdots , v_n \right\}$, we have 
+		$$\left\{
+		\begin{aligned}[l]
+			T(v_1) & = & D_{11}v_1 + D_{21}v_2 + \cdots + D_{1n}v_n\\
+			T(v_2) & = & D_{12}v_1 + D_{22}v_2 + \cdots + D_{n2}v_n\\
+			& \vdots &\\
+			T(v_n) & = & D_{1n}v_1 + D_{2n}v_2 + \cdots +D_{nn}v_n  
+		\end{aligned}\right.
+		$$
+		
+		\noindent $\because [T]_{\beta}$ is diagonal matrix $\implies\forall~i,j$ , $ i\neq j$ , $D_{ij}=0$ and $D_{ji}=0$. 
+		
+		\noindent $\therefore $ for $1\leq j \leq n$ , $T(v_j) = D_{jj}v_j$ take $D_{jj} = \lambda_j$ we obtain the formulation
+		$$
+		\mathrm{A}x = \lambda x
+		$$
+		% definition for eigenvalue
+		% definition for matrix version
+		
+		\begin{warn}[Notice :]
+		To diagonalize the matrix or a linear operator is to find a basis of eigenvalue and the corresponding eigenvectors.	
+		\end{warn}
+		
+		\begin{example}
+			
+		\end{example}
+		% Thm 5.2
+		\begin{defn}
+			Let A $\in~M_{n\times n}(F)$. The polynomial $f(t) = \det\left(\mathrm{A}-t\mathrm{I}\right)$ is called a characteristic polynomial of A.
+		\end{defn}
+		\begin{defn}
+			Let $T \in L(V)$ , $V$ is finite dimensional vector space , $\beta$ is a ordered basis for $V$. We define the characteristic polynomial of $T$ to be the characteristic polynomial of $A = [T]_{\beta}$ i.e. $f(t) = \det \left([T]_{beta} - t\mathrm{I}\right)$.
+		\end{defn}
+		
+		\begin{rmk}
+			The eigenvalue of $[T]_{\beta}$ is also an eigenvalue of $T$.
+		\end{rmk}
+		
+		%example 
+			
+		%Thm 5.3
+		\noindent $\bullet$ Some properties between $T$ and $[T]_{\beta}$ :
+		
+		\noindent $V :$ n-dimensional vector space , $T\in~L(V)$ , define determinant of $T$ denoted $\det(T)$ is choosing any ordered basis $\beta$ for $V$ , define $\det(T) = \det([T]_{\beta})$ then the followings are true :  
+			\begin{enumerate}
+				\item If $\beta$ and $\gamma$ are two ordered basis for $V$ $\implies \det([T]_{\beta}) = \det([T]_{\gamma})$
+				\item $T$ is invertible $\Leftrightarrow$ $\det(T) \neq 0$
+				\item $T$ is invertible $\implies \det(T^{-1}) = \det(T)^{-1}$
+				\item If $U \in~L(V)$, then $\det\left([TU]_{\beta}\right) = \det\left([T]_{\beta}\right)\det\left([U]_{\beta}\right)$
+				\item $\det(T-\lambda\mathrm{I}) = \det\left([T]_{\beta}-\lambda\mathrm{I}\right)$
+			\end{enumerate}
+			
+		%Thm 5.4
+		%Examples
+		
+		%exercise 3.(b),4(b)(e),8,14,15,19,22
+\end{document}
