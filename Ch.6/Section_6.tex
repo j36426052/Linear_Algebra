@@ -1,5 +1,6 @@
 \input{settings.tex}
-
+\parindent=0pt 
+\linespread{1.5}
 \begin{document}
 	\section*{Chap.6 Inner Product Space}		\subsection*{\S 6.1 Inner product and norms}
 	
@@ -30,4 +31,42 @@
 	%Exercise 14 17 21 23
 	
 	\subsection*{\S 6.2 Gram-Schmidt Orthogonalization Process}
+	
+	\begin{defn}
+		$V$ be a inner product space. A subset of $V$ is a orthonormal basis for $V$ if it is an ordered basis that is orthonormal. 
+	\end{defn}
+	\begin{thm*}
+		$V$ be a inner product space , $S = \{v_1 , \cdots , v_k\}$ be a orthogonal subset of $V$ consisting of nonzero vectors. If $y \in \mathrm{Span}(S)$ then 
+		
+		\[y = \sum_{i=1}^{k}\frac{\langle y,v_i\rangle}{\|v_i\|^2}\cdot v_i \]	
+	\end{thm*}
+	\begin{proof} $ $\\
+		$\because y ~\in \mathrm{Span}(S)\implies y = \sum_{i = 1}^{k} a_iv_i $ where $a_1 , \cdots , v_k ~\in F$
+		
+		For $1\leq i \leq k$ , $\langle y , v_i \rangle = \langle \sum_{i=1}^k a_iv_i , v_j \rangle = \sum_{i=1}^{K}a_i\langle v_i , v_j \rangle\ldots(1)$
+		
+		$\because \beta $ is an orthogonal subset $\implies \langle v_i , v_j \rangle = 0$ , $\forall i , j$ , $i\neq j$ $\therefore$ (1) $ = a_j\langle v_j , v_j \rangle = a_j\|v_j\|^2 $
+		
+		$\implies $ for $1\leq j \leq k , \langle y , v_j \rangle = a_j \|v_j\|^2 \implies a_j = \frac{\langle y , v_j \rangle}{\|v_j\|^2}$
+		
+		$y = \sum_{j=1}^{k} a_jv_j = y = \sum_{j=1}^{k} \frac{\langle y , v_j \rangle}{\|v_j\|^2} \cdot v_i $
+		
+	\end{proof}
+		
+	$\bullet$ Corollary : 
+		\begin{enumerate}
+			\item If $S$ is orthonormal and $y \in \mathrm{Span}(S)$ , $ y= \sum_{i=1}^{k} \langle y , v_i \rangle \cdot v_i$
+			\item $V$ : inner product space , $S$ : orthogonal subset of $V$ consisting nonzero vectors , then $S$ is linearly independent.
+		\end{enumerate}
+		
+		The main idea is that $\{w_1 , w_2\}$ is a subset of inner product space we want to construct an orthogonal subset from linear independent sets of vectors is such the way both set generate the same space.
+		
+		%Thm 6.4
+		
+		%Thm 6.5
+		
+		\begin{example}
+			$V = \R^3$ , $S = \left\{(1,0,1) , (0 , 1, 1) , (1,3,3)\right\}$ and $x = (1,1,2)$  
+		\end{example}	
+	
 \end{document}
