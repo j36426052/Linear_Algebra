@@ -162,7 +162,7 @@
 \section*{Vector Space}
 
 \begin{defn}[ Vector Space ]
-$\\$	A vector space (or linear space) $\mathrm{W}$ over a $Field$ $\mathrm{F}$ consists of a set on which two operations (called addition and scalar multiplication, respectively) are defined so that for each pair of elements $x, y$, in $\mathrm{W}$ there is a unique element $x+y$ in $\mathrm{W}$, and for each element a in F and each element $x$ in $\mathrm{W}$ there is a unique element $ax$ in $\mathrm{W}$, such that the following conditions hold.
+$\\$	A vector space (or linear space) $\mathrm{W}$ over a $field^2$ $\mathrm{F}$ consists of a set on which two operations (called addition and scalar mul- tiplication, respectively) are defined so that for each pair of elements $x, y$, in $\mathrm{W}$ there is a unique element $x+y$ in $\mathrm{W}$, and for each element a in F and each element $x$ in $\mathrm{W}$ there is a unique element $ax$ in $\mathrm{W}$, such that the following conditions hold.
 
 \end{defn}
 \subsection*{\color{red}There are eight rules for calculating the vector space !\\Please do not forget !\\}
@@ -192,10 +192,7 @@ $\\$ Any intersection of subspaces of a vector space $\mathrm{W}$ is a subspace 
 \end{thm*}
 
 % Exercise 19
-\begin{defn}
-$\\$	A vector space $\mathrm{V}$ is called direct sum of $\mathrm{W}_1$ and $\mathrm{W}_2$ if $\mathrm{W}_1$ and $\mathrm{W}_2$ are subspace of $\mathrm{V}$ such thay $\mathrm{W}_1\,\cap \,\mathrm{W}_2 = \{0\}$ and $\mathrm{W}_1 + \mathrm{W}_2 = \mathrm{V}$. We denote that $\mathrm{V}$ is the direct sum of $\mathrm{W}_1$ and $\mathrm{W}_2$ by  Writting $\mathrm{V} = \mathrm{W}_1\oplus \mathrm{W}_2$.
-\end{defn}
-
+% Textbook P22 definition
 % Exercise 23
 
 \begin{example}
@@ -206,11 +203,10 @@ Let $\mathrm{W}_1$ and $\mathrm{W}_2$ be subspaces of a vector space $\mathrm{V}
 \begin{enumerate}
 	\item  Let $\mathrm{W}_{1}$ and  $\mathrm{W}_{2}$ be subspace of $\mathrm{W}$, $\mathrm{W}_{1}$ $\cup$ $\mathrm{W}_{2}$ is a subspace 
 \item Suppose  $\mathrm{W}_{1}$ $\cup$ $\mathrm{W}_{2}$ is a subspace of $\mathrm{W}$ while $\mathrm{W}_{1} \not\subseteq \mathrm{W}_{2}$ and $\mathrm{W}_{2} \not\subseteq \mathrm{W}_{1}$ 
-
-$\implies$ $\exists~x\in\mathrm{W}_1\,,\,x \notin \mathrm{W}_2$ , $\exists~y \in \mathrm{W}_2 \,,\, y \notin \mathrm{W}_1$ $\\$
-If $\mathrm{W}_1 \cup \mathrm{W}_2$ is a subspace , $ x , y \in \mathrm{W}_1 \cup \mathrm{W}_2 $ $\implies x + y \in \mathrm{W}_1 \cup \mathrm{W}_2 $
+$\rightarrow$ $\exists \ \ x \in \mathrm{W}_1, x\notin \mathrm{W}_2$ , $\exists \ \ y \in \mathrm{W}_2, y \notin \mathrm{W}_1$ $\\$
+If $\mathrm{W}_1 \cup \mathrm{W}_2$ is a subspace , $ x , y \in \mathrm{W}_1 \cup \mathrm{W}_2 $ $\rightarrow  x + y \in \mathrm{W}_1 \cup \mathrm{W}_2 $
 \item $x + y \in \mathrm{W}_1 \cup \mathrm{W}_2 $ \ \ $\therefore$ $x + y \in \mathrm{W}_1$  or  $ x + y \in \mathrm{W}_2 $ \\
- Since $\mathrm{W}_1$ and $\mathrm{W}_2$ are subspaces of $\mathrm{V}$ $\therefore$ $ x \in \mathrm{W}_1,$  $y \in \mathrm{W}_2$ or $ x \in \mathrm{W}_2,$  $y \in \mathrm{W}_1$  $\rightarrow \leftarrow$ wtih our suppose in 1.
+ Since $\mathrm{W}_1$ and $\mathrm{W}_2$ are subspaces of $\mathrm{V}$ \ \ $\therefore$ $ x \in \mathrm{W}_1,$  $y \in \mathrm{W}_2$ or $ x \in \mathrm{W}_2,$  $y \in \mathrm{W}_1$  $\rightarrow \leftarrow$ wtih (1)
 \end{enumerate} 
 
 \end{sol*}
@@ -218,7 +214,7 @@ If $\mathrm{W}_1 \cup \mathrm{W}_2$ is a subspace , $ x , y \in \mathrm{W}_1 \cu
 
 
 \begin{defn}[ Definition of Linear Combination ]
- $\\$	Let $\mathrm{W}$ be a vector space and $\mathrm{S}$ a nonempty subset of $\mathrm{V}.$ A vector $v \in \mathrm{V}$ is called a linear combination of vectors of $\mathrm{S}$ if there exist a finite number of vectors $u_1,u_2,\cdots,u_n$ in $\mathrm{S}$ and scalars $a_1,a_2,\cdots,a_n$ in $\mathrm{F}$ such that $v = a_1u_1 + a_2u_2 +\cdots+a_nu_n$. In this case we also say that $\mathrm{W}$ is a linear combination of $u_1,u_2,\cdots,u_n$ and call $a_1,a_2,\cdots,a_n$ the coefficients of the linear combination.
+ $\\$	Let $\mathrm{W}$ be a vector space and $\mathrm{S}$ a nonempty subset of $\mathrm{V}.$ A vector $v \in \mathrm{V}$ is called a linear combination of vectors of $\mathrm{S}$ if there exist a finite number of vectors $u_1,u_2,...,u_n$ in $\mathrm{S}$ and scalars $a_1,a_2,...,a_n$ in $\mathrm{F}$ such that $v = a_1u_1 + a_2u_2 +···+a_nu_n.$ In this case we also say that $\mathrm{W}$ is a linear combination of $u_1,u_2,...,u_n$ and call $a_1,a_2,...,a_n$ the coefficients of the linear combination.
 \end{defn}
 
 % Textbook P31 Example4
@@ -228,60 +224,6 @@ $\\$	Let $\mathrm{S}$ be a nonempty subset of a vector space $\mathrm{V}.$ The s
 \end{defn}
 
 % Textbook P34 Exercise 5 AE,6 
-\begin{example}
-Question ( Exercise 5 (a) (e) ) :\\
-	In each part, determine whether the given vector is in the span of $S$.
-\begin{enumerate}
-	
-\item[a.](2,-1,1), $\mathrm{S}$ = \{(1,0,2),(-1,1,1)\}
-\item[e.] $-x^3+2x^2+3x+3$, $\mathrm{S}$ = $\left\{x^3+x^2+x+1,x^2+x+1,x+1\right\}$
-\end{enumerate}
-\begin{sol*}$ $
-\begin{enumerate}
-	\item[(a)]
-	\item $\mathrm{Span}(S) = \{a_1(1,0,2) + a_2(-1,1,1) \mid a_1 , a_2 \in \mathrm{F}\} $
-	\item $\left\{\begin{aligned}[l]
-		a_1 - a_2   & = & 2\\
-		0a_1 + a_2. & = &-1\\
-		2a_1 + a_2  & =  &1
-	\end{aligned}\right.$  $ \implies a_1 = 1, a_2 = -1$
-	\item Since there exist scalars $ a_1 , a_2$ such that $(2,-1,1) = a_1(1,0,2) + a_2(-1,1,1)$, we conclude that $(2,-1,1)$ is in the span of $S$.
-\end{enumerate}
-\begin{enumerate}
-	\item[(e)]
-	\item $\mathrm{Span}(S) = \{a_1(x^3+x^2+x+1) + a_2(x^2+x+1) + a_3(x+1)\}$
-	\item $\left\{\begin{aligned}[l]
-		a_1 + 0a_2 + 0a_3 &=& -1\\
-		a_1 + a_2 + 0a_3 &=& 2\\
-		a_1 + a_2 + a_3 &=& 3\\
-		a_1 + a_2 + a_3 &=& 3
-	\end{aligned}\right.$ $\implies a_1 = -1 , a_2 = 3 , a_3 = 1$
-	\item  Since there exist scalars $a_1 , a_2, a_ 3$ such that $-x^3+2x^2+3x+3 = a_1(x^3+x^2+x+1) + a_2(x^2+x+1) + a_3(x + 1)$, we conclude that $(2,-1,1)$ is in the span of $S$.
-
-\end{enumerate}
-
-\end{sol*}
-
-\end{example}
-
-\begin{example}
-	Question ( Exercise 6 ) :\\
-	Show that the vectors $(1,1,0) , (1,0,1)$, and $(0,1,1)$ generate $\mathrm{F}^3$.
-\begin{sol*}
-Let  $\mathrm{S} = \{ (1,0,1),(1,0,1),(0,1,1) \} $. 
-
- Claim : $\mathrm{S} = \{ (1,0,1),(1,0,1),(0,1,1) \} $ is linearly independent.
-\begin{enumerate}
-	\item $a_1(1,0,1) + a_2(1,0,1) + a_3(0,1,1) = 0 \implies a_1 = a_2 = a_3 = 0$
-	\item $b_1(1,0,1) + b_2(1,0,1) + b_3(0,1,1) = (x , y , z)$
- 
-	$\implies b_1 = \frac{x + y - z}{2} , b_2 = \frac{x - y + z}{2} , b_3 = \frac{-x + y + z}{2}$
-\end{enumerate}	
-Since $\mathrm{S} = \{ (1,0,1),(1,0,1),(0,1,1) \} $ is linearly independent,  $\mathrm{Span}(S)$ can generate $\mathrm{F}^3$.
-\end{sol*}
-
-	
-\end{example}
 
 \begin{example}
 	$\mathrm{S} = \{ (0,0,1),(1,0,0)\} $
@@ -299,7 +241,7 @@ $\\$	A subset $\mathrm{S}$ of a vector space $\mathrm{W}$ is called linearly dep
 \end{defn}
 
 \begin{center}
-	$a_1u_1 + a_2u_2 +\cdots +a_nu_n = 0$.
+	$a_1u_1 + a_2u_2 +···+a_nu_n = 0.$
 \end{center}
 In this case we also say that the vectors of $\mathrm{S}$ are linearly dependent.
 
@@ -319,35 +261,33 @@ $\\$Corollary. Let $\mathrm{W}$ be a vector space, and let $\mathrm{S}_1 \subset
 
 % Exercise 2 ACE, 13
 
+%2
 \begin{example}
-	Question ( Exercise 2 (a) (c) (e) ) :\\
-	Determine whether the following sets are linearly dependent or linearly independent.
-	 \begin{enumerate}
-	 	\item[a.] $\left\{\left[\begin{matrix} 
-1  & -3\\
--2 & 4
+Question(Excercise2):\\
+Determine whether the following sets are linearly dependent or linearly independent.\\
+(c) 
+$\left\{x^{3}+2 x^{2},-x^{2}+3 x+1, x^{3}-x^{2}+2 x-1\right\}$ in $\mathrm{P}_{3}(R)$\\
+(e)
+$(1,-1,2),(1,-2,1),(1,1,4)\}$ in $\mathrm{R}^{3}$
 
- \end{matrix}\right] , \left[\begin{matrix} 
--2 & 6 \\
-4 & -8
- \end{matrix}\right]\right\}$ 
- \item[c.]$\left\{x^3+2x^2 , -x^2+3x+1 , x^3 - x^2 + 2x +1\right\}$
- \item[e.]$\left\{(1,-1,2) , (1,-2,1) , (1,1,4)\right\}$ in $\R^3$
- \end{enumerate}
- \begin{sol*}$ $
-	 \begin{enumerate}
- 	 \item [a.] Since $ 2\left[\begin{matrix}
-1 & -3 \\
-2 & 4 	
-\end{matrix}\right] + \left[\begin{matrix}
--2 & 6 \\
-4 & 8	
-\end{matrix}\right] = 0\implies$ linearly dependent by Thm 1.5. 
- 
- 	\end{enumerate}
- \end{sol*}
 
 \end{example}
+
+%13
+\begin{example}
+Question(Excercise13):\\
+13. Let $V$ be a vector space over a field of characteristic not equal to two.\\
+(a) Let $u$ and $v$ be distinct vectors in $\mathrm{V}$. Prove that $\{u, v\}$ is linearly independent if and only if $\{u+v, u-v\}$ is linearly independent.\\
+(b) Let $u, v$, and $w$ be distinct vectors in $\mathrm{V}$. Prove that $\{u, v, w\}$ is linearly independent if and only if $\{u+v, u+w, v+w\}$ is linearly independent.\\
+\begin{sol*}$ $
+
+(a) Sufficiency: If $\{u+v, u-v\}$ is linearly independent we have $a(u+v)+$ $b(u-v)=0$ implies $a=b=0$. Assuming that $c u+d v=0$, we can deduce that $\frac{c+d}{2}(u+v)+\frac{c-d}{2}(u-v)=0$ and hence $\frac{c+d}{2}=\frac{c-d}{2}=0$. This means $c=d=0$ if the characteristc is not two. Necessity: If $\{u, v\}$ is linearly independent we have $a u+b v=0$ implies $a=b=0$. Assuming that $c(u+v)+d(u-v)=0$, we can deduce that $(c+d) u+(c-d) v=0$ and hence $c+d=c-d=0$ and $2 c=2 d=0$. This means $c=d=0$ if the characteristc is not two.\\
+(b) Sufficiency: If $a u+b v+c w=0$ we have $\frac{a+b-c}{2}(u+v)+\frac{a-b+c}{2}(u+w)+$ $\frac{-a+b+c}{2}(v+w)=0$ and hence $a=b=c=0$. Necessity: If $a(u+v)+$ $b(u+w)+c(v+w)=0$ we have $(a+b) u+(a+c) v+(b+c) w=0$ and hence $a=b=c=0$.
+\end{sol*}
+
+
+\end{example}
+
 
 % Thm 1.7
 \begin{thm*}[1.7]
@@ -365,14 +305,20 @@ $\\$	 A basis $\beta$ for a vector space V is a linearly independent subset of V
 
 % Exercise 2 BD
 
+%2B
+\begin{example}
+Question(Excercise2):\\
+Determine which of the following sets are bases for $\mathrm{R}^{3}$\\
+(b) $\{(2,-4,1),(0,3,-1),(6,0,-1)\}$\\
+\end{example}
 
 % Thm 1.8
 \begin{thm*}[1.8]
 $\\$	 Let $\mathrm{V}$ be a vector space and $\beta = \{u_1,u_2,...,u_n \}$ be a subset of $\mathrm{V}$. Then $\beta$ is a basis for V if and only if each v $\in$ V can be uniquely expressed as a linear combination of vectors of $\beta$, that is, can be expressed in the form
 \begin{center}
-	$\mathrm{v} = a_1u_1 + a_2u_2 + \cdots+ a_nu_n $
+	$\mathrm{v} = a_1u_1 + a_2u_2 + · · · + a_nu_n $
 \end{center} 
-for unique scalars $a_1, a_2, \cdots , a_n$.
+for unique scalars $a_1, a_2, . . . , a_n$.
 \end{thm*}
 
 
@@ -383,7 +329,7 @@ $\\$ If a vector space V is generated by a finite set S, then some subset of S i
 
 % Thm 1.10
 \begin{thm*}[1.10 Replacement Theorem]
-$\\$ Let V be a vector space that is generated by a set G containing exactly n vectors, and let L be a linearly independent subset of V containing exactly m vectors. Then m $\leq$ n and there exists a subset H of G containing exactly $\mathrm{n} - \mathrm{m}$ vectors such that L $\cup$ H generates V.	
+$\\$ Let V be a vector space that is generated by a set G containing exactly n vectors, and let L be a linearly independent subset of V containing exactly m vectors. Then m $\leq$ n and there exists a subset H of G containing exactly n $\mp$ m vectors such that L $\cup$ H generates V.	
 \end{thm*}
 % Corollary 
 \begin{thm*}[Corollary 1.]
@@ -410,7 +356,7 @@ A vector space that is not finite-dimensional is called infinite-dimensional	.
 
 
 \newpage
-\section*{Chapter 2 Linear Transformation}	
+\section*{Chapter 2}	
 	\subsection*{\S\,2-1 Linear transformation}
 \begin{defn}[Definition of Linear Transformation]
 $ $\\	Let $\mathrm{V}$ and $\mathrm{W}$ be vector spaces (over $\mathrm{F}$). We call a function $\mathrm{T}: \mathrm{V}  \rightarrow  \mathrm{W}$    a linear transformation from $\mathrm{V}$ to $\mathrm{W}$ if, for all x, y $\in$ $\mathrm{V}$ and c $\in$ $\mathrm{F}$, we have
@@ -535,7 +481,7 @@ Since $\mathrm{S}$ is L.I. $\implies a_1 = a_2=\cdots = a_n = 0$
 
 \end{example}
 \begin{thm*}[2.6]
-$ $ \\Let V and W be vector spaces over F, and suppose that \{ $v_1,v_2,...,v_n$ \} is a basis for V. For $w_1,w_2,...,w_n$ in W, there exists exactly one linear transformation $\mathrm{T}: \mathrm{V}  \rightarrow \mathrm{W}$ such that T($v_i$) = $w_i$ for i = 1,2,...,n.
+$ $ \\Let V and W be vector spaces over F, and suppose that \{ $v_1,v_2,...,v_n$ \} is a basis for V. For $w_1,w_2,...,w_n$ in W, there exists exactly one linear transformation $T: V  \rightarrow  W$ such that T($v_i$) = $w_i$ for i = 1,2,...,n.
 \end{thm*}
 
 
