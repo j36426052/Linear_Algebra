@@ -2,8 +2,8 @@
 \linespread{1.6} % Space between lines
 \parindent=0pt % line up
 \begin{document}
-	\section*{Chapter 2 Linear Transformations, Null Spaces, and Ranges}	
-	\subsection*{\S\,2-1 Linear transformation}
+	\section*{Chapter 2 Linear Transformations and Matrices}	
+	\subsection*{\S\,2-1 Linear transformation, Null Spaces, and Ranges}
 \begin{defn}[Definition of Linear Transformation]
 $ $\\	Let $\mathrm{V}$ and $\mathrm{W}$ be vector spaces (over $\mathrm{F}$). We call a function $\mathrm{T}: \mathrm{V}  \rightarrow  \mathrm{W}$    a linear transformation from $\mathrm{V}$ to $\mathrm{W}$ if, for all x, y $\in$ $\mathrm{V}$ and c $\in$ $\mathrm{F}$, we have
 
@@ -168,13 +168,66 @@ $\mathrm{U} : \mathrm{V} \rightarrow \mathrm{W}$ is a linear transformation such
 \end{defn}
 
 \begin{defn}[The addition and multiplication for Linear Transformation] $ $\\
-Let $\mathrm{T} , \mathrm{U}: \mathrm{V} \rightarrow \mathrm{W}$ be arbitrary functions, where V and W are vector spaces over F, and let $a \in \mathrm{F}$. We define $\mathrm{T}+\mathrm{U} : \mathrm{V} \rightarrow \mathrm{W}$ by $(\mathrm{T}+\mathrm{U})(x) = \mathrm{T}(x)+\mathrm{U}(x)$ for all $x \in \mathrm{V}$, and $a\mathrm{T}: \mathrm{V} \rightarrow \mathrm{W}$ by $(a\mathrm{T})(x) = a\mathrm{T}(x)$ for all $x \in \mathrm{V}$.
+Let $\mathrm{T} , \mathrm{U}: \mathrm{V} \rightarrow \mathrm{W}$ be arbitrary functions, where V and W are vector spaces over F, and let $a \in \mathrm{F}$. We define $\mathrm{T}+\mathrm{U} : \mathrm{V} \rightarrow \mathrm{W}$ \ \ by\ \ $(\mathrm{T}+\mathrm{U})(x) = \mathrm{T}(x)+\mathrm{U}(x)$\ \ for all $x \in \mathrm{V}$, and $a\mathrm{T}: \mathrm{V} \rightarrow \mathrm{W}$\ \ by\ \ $(a\mathrm{T})(x) = a\mathrm{T}(x)$\ \ for all \ \ $x \in \mathrm{V}$.
 
 
 Of course, these are just the usual definitions of addition and scalar multiplication of functions. We are fortunate, however, to have the result that both sums and scalar multiples of linear transformations are also linear.
 \end{defn}
 
-	meowmeow
+\newpage
+
+\begin{thm*}[2.7] $ $\\
+	 Let V and W be vector spaces over a field $F$, and let\ \ $\mathrm{T} , \mathrm{U}: \mathrm{V} \rightarrow \mathrm{W}$\ \ be linear.
+\begin{enumerate} 
+	\item[(a)] For all $a \in F$,\ \ $a$$\mathrm{T} + \mathrm{U}$ is linear.
+	\item[(b)] Using the operations of addition and scalar multiplication in the preceding definition, the collection of all linear transformations from V to W is a vector space over $F$.
+\end{enumerate}
+	
+\end{thm*}
+
+\begin{defn}[Definition of the Linear Operator] $ $\\
+Let V and W be vector spaces over $F$. We denote the vector space of all linear transformations from V into W by L(V, W). In the case that V = W, we write L(V) instead of L(V, W).
+\end{defn}
+
+
+\begin{thm*}[2.8]$ $\\
+	Let V and W be finite-dimensional vector spaces with ordered bases $\beta$ and $\gamma$, respectively, and let $\mathrm{T} , \mathrm{U}: \mathrm{V} \rightarrow \mathrm{W}$ be linear transformations. Then
+\begin{enumerate}
+	\item[(a)] $[\mathrm{T} + \mathrm{U}]^\gamma_\beta = [\mathrm{T}]^\gamma_\beta + [\mathrm{U}]^\gamma_\beta$ and
+	\item[(b)] $[a\mathrm{T}]^\gamma_\beta = a[\mathrm{T}]^\gamma_\beta$ for all scalars $a$.
+\end{enumerate}
+$\mathcal{Q} snake$ : Thm 2.8 means that $\lbrack \mathrm{x} \rbrack^\gamma_\beta$ has the characteristic of " linear ", too.
+\end{thm*}
+
+\subsection*{\S\,2-3 Composition of Linear Transform}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		
 \end{document}
