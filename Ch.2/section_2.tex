@@ -199,20 +199,218 @@ Let V and W be vector spaces over $F$. We denote the vector space of all linear 
 $\mathcal{Q} snake$ : Thm 2.8 means that $\lbrack \mathrm{x} \rbrack^\gamma_\beta$ has the characteristic of " linear ", too.
 \end{thm*}
 
-\subsection*{\S\,2-3 Composition of Linear Transform}
+\newpage
+
+\color{red} P.S. We suggests you study 2-4 first, and study 2-3 later 
+
+\subsection*{\color{black}\S\,2-3 Composition of Linear Transform}
+
+\color{black}
+
+\begin{thm*}[2.9]$ $\\
+	Let V, W, and Z be vector spaces over the same field $F$, and let $\mathrm{T} : \mathrm{V} \rightarrow \mathrm{W}$ and $\mathrm{U} : \mathrm{W} \rightarrow \mathrm{Z}$ be linear. Then $\mathrm{U}\mathrm{T} : \mathrm{V} \rightarrow \mathrm{Z} $ is linear.
+\end{thm*}
+
+
+\begin{thm*}[2.10]$ $\\ 
+	Let V be a vector space. Let T, $\mathrm{U}_1$, $\mathrm{U}_2 \in L(V)$. Then 
+	\begin{enumerate}
+		\item [(a)] $\mathrm{T}(\mathrm{U}_1+\mathrm{U}_2) = \mathrm{T}\mathrm{U}_1 + \mathrm{T}\mathrm{U}_2$ and $(\mathrm{U}_1 + \mathrm{U}_2)\mathrm{T}$ = $\mathrm{U}_1\mathrm{T} + \mathrm{U}_2\mathrm{T}$
+		\item [(b)] $\mathrm{T}(\mathrm{U}_1\mathrm{U}_2) = (\mathrm{T}\mathrm{U}_1)\mathrm{U}_2$
+		\item [(c)] TI = IT = T
+		\item [(d)] $a(\mathrm{U}_1\mathrm{U}_2) = (a\mathrm{U}_1)\mathrm{U}_2 = \mathrm{U}_1(a\mathrm{U}_2)$ for all scalars $a$.
+	\end{enumerate}
+
+\end{thm*}
+
+\begin{defn}[Definition for the product of two matrices] $ $\\
+	Let A be an m $\times$ n matrix and B be an n $\times$ p matrix. We define the product of A and B, denoted AB, to be the m $\times$ p matrix such that 
+	\begin{center}
+		$(AB)_{ij}  = \sum_{k=1}^{\mathrm{n}} A_{ik}B_{kj}$ \ \ for $1 \leq i \leq m,$\ \ $1 \leq j \leq p$ 
+	\end{center}
+\end{defn}
+
+\begin{thm*}[2.11]$ $\\
+	Let V, W, and Z be finite-dimensional vector spaces with ordered bases $\alpha , \beta$, and  $\gamma$, respectively. Let $\mathrm{T}: \mathrm{V} \rightarrow \mathrm{w}$ and $\mathrm{U}: \mathrm{W} \rightarrow \mathrm{Z}$ be linear transformations. Then
+	\begin{center}
+		$[\mathrm{U}\mathrm{T}]^\gamma_\alpha = [\mathrm{U}]^\gamma_\beta[\mathrm{T}]^\beta_\alpha$.
+	\end{center}
+
+\end{thm*}
+Corollary. $ $\\
+Let V be a finite-dimensional vector space with an ordered
+basis $\beta$. Let $\mathrm{T}, \mathrm{U} \in L(V)$. Then $[\mathrm{U}\mathrm{T}]_\beta = [\mathrm{U}]_\beta [\mathrm{T}]_\beta$.
+$ $\\
+
+\newpage
+
+\begin{defn}[Definition of the Identity Matrix] $ $\\
+We define the Kronecker delta $\delta_{ij}$ by $\delta_{ij} = 1$ if $i = j$ and $\delta_{ij} = 0$ if $i \neq j$. The n $\times$ n identity matrix In is defined by $(I_n)_{ij} = \delta_{ij}$.
+Thus, for example,
+
+\begin{center}
+
+$I_1 = \left[\begin{matrix}
+	1	
+\end{matrix}\right]$,\ \ 
+$I_2 = \left[\begin{matrix}
+	1 & 0\\  
+	0 & 1 \\	
+\end{matrix}\right]$,\ \ and   
+$I_3 = \left[\begin{matrix}
+	1 & 0 & 0 \\
+	0 & 1 & 0 \\
+	0 & 0 & 1 \\ 	
+\end{matrix}\right]$
+
+\end{center}
+\end{defn}
+
+\begin{thm*}[2.12] $ $\\
+ Let A be an m $\times$ n matrix, B and C be n $\times$ p matrices, and D and E be q $\times$ m matrices. Then
+ 
+ \begin{enumerate}
+ 
+ 	\item [(a)]A(B+C) = AB + AC and (D+E)A = DA + EA.
+ 	\item [(b)]$a$(AB) = ($a$A)B = A($a$B) for any scalar $a$.
+ 	\item [(c)]$\mathrm{I}_mA = A = A\mathrm{I}_n$.
+ 	\item [(d)]If V is an n-dimensional vector space with an ordered basis $\beta$, then $[I_V]_\beta = I_n$.
+
+ \end{enumerate}
+
+\end{thm*}
+
+\begin{thm*}[2.13] $ $\\
+Let A be an m $\times$ n matrix and B be an n $\times$ p matrix. For each $ j (1 \leq j \leq p)$ let $u_j$ and $v_j$ denote the jth columns of AB and B, respectively. Then
+\begin{enumerate}
+	\item [(a)] $u_j = Av_j$
+	\item [(b)] $v_j = Be_j$, where $e_j$ is the jth standard vector of $\mathrm{F}^p$.
+ \end{enumerate}	
+\end{thm*}
+
+\begin{thm*}[2.14] $ $\\
+	Let V and W be finite-dimensional vector spaces having ordered bases $\beta$ and $\gamma$, respectively, and let $\mathrm{T} : \mathrm{V} \rightarrow \mathrm{W}$ be linear. Then, for each $u \in \mathrm{V}$, we have
+	\begin{center}
+		$[\mathrm{T}(u)]_\gamma = [\mathrm{T}]^\gamma_\beta[u]_\beta$.
+	\end{center}
+
+\end{thm*}
+
+\begin{defn}[Definition of Left-Multiplication Transformation]$ $\\
+Let A be an m $\times$ n matrix with entries from a field F . We denote by $L_A$ the mapping $L_A : \mathrm{F}^n \rightarrow \mathrm{F}^m$ defined by $L_A(x) = Ax$ (the matrix product of $A$ and $x$) for each column vector $x \in \mathrm{F}^n$. We call $L_A$ a left-multiplication transformation.	
+\end{defn}
+
+\newpage
+
+\begin{thm*}[2.15]
+	The characteristics of Left-Multiplication Transformation $ $\\
+	Let A be an m $\times$ n matrix with entries from $F$ . Then the left-multiplication transformation $\mathrm{L}_A : \mathrm{F}^n \rightarrow \mathrm{F}^m$ is linear. Furthermore, if B is any other m $\times$ n matrix (with entries from F) and $\beta$ and $\gamma$ are the standard ordered bases for $\mathrm{F}^n$ and $\mathrm{F}^m$, respectively, then we have the following properties.
+	
+	\begin{enumerate}
+	
+		\item [(a)] $[\mathrm{L}_A]^\gamma_\beta = A$.
+		\item [(b)] $\mathrm{L}_A = \mathrm{L}_B$ if and only if A = B.
+		\item [(c)] $\mathrm{L}_{A+B} = \mathrm{L}_A + \mathrm{L}_B$ and $\mathrm{L}_{aA} = a\mathrm{L}_A$ for all $a \in F$.
+		\item [(d)]  If $\mathrm{T} : F^n \rightarrow F^m$ is linear, then there exists a unique m $\times$ n matrix C such
+that $\mathrm{T} = \mathrm{L}_C$. In fact, $C = [\mathrm{T}]^\gamma_\beta$.
+		\item [(e)] If E is an n $\times$ p matrix,then $\mathrm{L}_{AE} = \mathrm{L}_A\mathrm{L}_E$.
+		\item [(f)] If m = n L, then $\mathrm{L}_{I_n} =\mathrm{I}_{F^n}$.
+	
+	\end{enumerate}
+
+\end{thm*}
+
+\begin{thm*}[2.16]$ $\\
+Let A,B, and C be matrices such that A(BC) is defined. Then (AB)C is also defined and A(BC) = (AB)C ; that is, matrix multiplication is associative.	
+\end{thm*}
+
+\newpage
+
+\begin{defn}[Definition of Innvertible] $ $\\
+	Let V and W be vector spaces, and let $\mathrm{T} : \mathrm{V} \rightarrow \mathrm{W}$ be linear. A function $\mathrm{U} : \mathrm{W} \rightarrow \mathrm{V}$ is said to be an inverse of T if $\mathrm{T} \mathrm{U} = \mathrm{I}_\mathrm{W}$ and $\mathrm{U} \mathrm{T} = \mathrm{I}_\mathrm{V}$. If T has an inverse, then T is said to be invertible. As noted in Appendix B, if T is invertible, then the inverse of T is unique and is denoted by $\mathrm{T}^{-1}$.
+
+	
+\begin{center}
+	The following facts hold for invertible functions T and U.
+\end{center}
+	\begin{enumerate}
+	
+	\item [(1.)] $(\mathrm{T}\mathrm{U})^{-1} = \mathrm{U}^{-1}\mathrm{T}^{-1}$ is invertible.
+	
+	\item[(2.)] $(\mathrm{T}^{-1})^{-1} = \mathrm{T}$ ; in particular, $\mathrm{T}^{-1}$ is invertible 
+
+	\item[] We often use the fact that a function is invertible if and only if it is both one-to-one and onto. We can therefore restate Theorem 2.5 as follows.
+		
+	\item [(3.)] Let $\mathrm{T} : \mathrm{V} \rightarrow \mathrm{W}$ be a linear transformation, where V and W are finite-dimensional spaces of equal dimension. Then T is invertible if and only if rank(T) = $\dim(V)$.
+	\end{enumerate}
+
+\end{defn}
+
+\begin{thm*}[2.17]$ $\\
+	Let V and W be vector spaces, and let $\mathrm{T} : \mathrm{V} \rightarrow \mathrm{W}$ be linear and invertible. Then $\mathrm{T}^{-1} : \mathrm{V} \rightarrow \mathrm{W}$ is linear.
+\end{thm*}
+
+\begin{defn}[Definition of Matrix Invertible]$ $\\
+	Let A be an n $\times$ n matrix. Then A is invertible if there exists an n $\times$ n matrix B such that AB = BA = I.
+	
+	
+  If A is invertible, then the matrix B such that AB = BA = I is unique. (If C were another such matrix, then C = CI = C(AB) = (CA)B = IB = B.) The matrix B is called the inverse of A and is denoted by $\mathrm{A}^{-1}$.
+
+\end{defn}
 
 
 
+Lemma. 
+
+ Let T be an invertible linear transformation from V to W. Then V is finite-dimensional if and only if W is finite-dimensional. In this case, $\dim(\mathrm{V}) = \dim(\mathrm{W})$.
 
 
+\newpage
+
+\begin{thm*}[2.18]$ $\\
+	Let V and W be finite-dimensional vector spaces with ordered bases $\beta$ and $\gamma$, respectively. Let $\mathrm{T} : \mathrm{V} \rightarrow \mathrm{W}$ be linear. Then T is invertible if and only if $[\mathrm{T}]^\gamma_\beta$ is invertible. Furthermore, $[\mathrm{T}^{-1}]^\beta_\gamma = ([\mathrm{T}^\gamma_\beta])^{-1}$.
+	
+\end{thm*}
+
+Corollary 1. $ $\\
+Let V be a finite-dimensional vector space with an ordered basis $\beta$, and let $\mathrm{T} : \mathrm{V} \rightarrow \mathrm{V}$ be linear. Then T is invertible if and only if $[\mathrm{T}]_\beta$ is invertible.
+
+ Furthermore, $[\mathrm{T}^{-1}]_\beta = ([\mathrm{T}]_\beta)^{-1}$
 
 
+Corollary 2. $ $\\
+Let A be an n $\times$ n matrix. Then A is invertible if and only
+if $\mathrm{L}_A$ is invertible.
 
+ Furthermore, $(\mathrm{L_A})^{-1} = \mathrm{L}_{A^{-1}}$
 
+\begin{defn}[Definition of Isomorphism]$ $\\
+	Let V and W be vector spaces. We say that V is isomorphic to W if there exists a linear transformation $\mathrm{T} : \mathrm{V} \rightarrow \mathrm{W}$ that is invertible. Such a linear transformation is called an isomorphism from V onto W.
+\end{defn}
 
+\begin{thm*}[2.19]$ $\\
+Let V and W be finite-dimensional vector spaces (over the same field). Then V is isomorphic to W if and only if $\dim(\mathrm{V}) = \dim(\mathrm{W})$.
 
+\end{thm*}
 
+Corollary.$ $\\
+Let V be a vector space over $F$. Then V is isomorphic to $\mathrm{F}^n$
+if and only if $\dim(\mathrm{V}) = n$.
 
+\begin{thm*}[2.20]$ $\\
+Let V and W be finite-dimensional vector spaces over F of dimensions n and m, respectively, and let $\beta$ and $\gamma$ be ordered bases for V and W, respectively. Then the function $\Phi:\mathrm{L}(\mathrm{V},\mathrm{W}) \rightarrow \mathrm{M}_{m \times n}(F)$ , defined by $\Phi(\mathrm{T}) = [\mathrm{T}]^\gamma_\beta$ for $\mathrm{T} \in \mathrm{L}(\mathrm{V},\mathrm{W})$ , is an isomorphism.
+\end{thm*}
+
+Corollary.$ $\\
+Let V and W be finite-dimensional vector spaces of dimensions n and m, respectively. Then L(V, W) is finite-dimensional of dimension mn.
+
+\begin{defn}[Definition of Standard Representation of V]$ $\\
+Let $\beta$ be an ordered basis for an n-dimensional vector space V over the field $F$. The standard representation of V with respect to $\beta$ is the function $\phi_\beta:\mathrm{V} \rightarrow \mathrm{F}^n$ defined by $\phi_\beta(x)=[x]_\beta$ for each $x \in \mathrm{V}$.	
+\end{defn}
+
+\begin{thm*}[2.21]$ $\\
+	For any finite-dimensional vector space V with ordered basis $\beta$, $\phi_\beta$ is an isomorphism.
+\end{thm*}
 
 
 
