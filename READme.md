@@ -9,3 +9,4 @@
     4. simplfy describe your work on description 
     5. push to the origin
     6. once you need to merge a branch pull a request default viewer : Bowei
+    7. hiiii
